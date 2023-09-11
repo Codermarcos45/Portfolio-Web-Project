@@ -1,0 +1,182 @@
+@media screen and (max-width : 1024px) {
+
+    .main-nav {
+        justify-content: space-evenly;
+    }
+    .hover-links {
+        display: grid;
+        grid-template-rows: repeat(2,1fr);
+        grid-template-columns: repeat(4,1fr);
+        row-gap: -20px;
+        justify-items : center;
+        align-items: center;
+        font-size: 1rem;
+        padding-inline : 5px; 
+    }
+
+    /* .search-bar {
+        flex-direction: column;
+    } */
+
+    .news-input {
+        width: 20vw;
+    }
+    .search-button {
+        padding : 3px 8px;
+    }
+
+    .card-container {
+        justify-content: space-evenly;
+    }
+
+    footer {
+        padding : 20px;
+
+    }
+
+    footer .company-logo img {
+        width: 100px;
+        height: 100px;
+    }
+
+}
+
+
+@media screen and (max-width : 768px) {
+    .card-container {
+        padding : 20px;
+    }
+
+    .card {
+        margin : 10px;
+        width: 280px;
+    }
+
+    .main-nav {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-inline: 30px;
+        gap : 0;
+    }
+
+    .hamburger {
+        width: 60vw;
+        display: flex;
+        justify-content: flex-end;
+        color : white;
+        cursor: pointer;
+    }
+
+    .hamburger.deactive {
+        display: none;
+    }
+
+    .search-bar {
+        /* background-color: #fff; */
+        flex-direction: row;
+        margin: auto;
+        margin-bottom: 1rem;
+    }
+
+    .news-input {
+        width: 40vw;
+    }
+
+    .nav-links {
+        position :relative;
+        top : 100%;
+        width: 300%;
+        padding-block: 5px;
+        margin-bottom: 5px;
+        flex-wrap: wrap;
+        transition: ease-in-out 1s;
+        background-color: rgb(168, 167, 167);
+        margin-bottom: 1rem;
+        display: none;
+    }
+
+
+    .nav-links.active {
+        display: inline-block;
+    }
+    
+    .hover-links {
+        display: flex;
+        flex-direction: column;
+        gap : 5px;
+    }
+
+
+
+    .nav-links .hover-links li {
+        color : #262626;
+        font-size: 1rem;
+    }
+
+    
+    .footer-text p {
+        font-size: 0.8rem;
+    }
+
+    .footer-links a {
+        font-size: 0.9rem;
+    }
+
+
+}
+
+@media screen and (max-width : 480px) {
+    .card {
+        width: 90vw;
+    }
+    .card-content {
+        padding : 8px;
+    }
+
+    .main-nav {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-inline: 30px;
+        row-gap: 20px;
+    }
+
+    .company-logo img {
+        width: 60px;
+        height: 50px;
+        margin-left: -10px;
+    }
+
+    #img {
+        height: 15vh;
+        width: 15vh;
+    }
+    .search-bar  {
+        flex-direction: row;
+        margin : auto;
+        margin-top: -15px;
+        padding-bottom: 10px;
+    }
+    .search-button {
+        width: 14vw;
+        height: 5vh;
+        font-size: 0.7rem;
+    }
+
+    .news-input {
+        width: 50vw;
+        height: 5vh;
+    }
+    
+    .footer-text p {
+        font-size: 0.7rem;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap : 10px;
+    }
+
+    .footer-links a {
+        font-size: 0.85rem;
+    }
+}

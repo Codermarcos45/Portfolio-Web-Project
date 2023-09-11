@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Pangolin&display=swap');
+
+* {
+    padding : 0;
+    margin : 0;
+    box-sizing: border-box;
+    font-family: 'Lato',sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+body {
+    background-color: #5C5470;
+}
+
+h1 {
+    padding : 20px;
+    font-size: 75px;
+    text-align: center;
+    color: #C3E0E5;
+    font-family: 'Pangolin', cursive;
+}
+
+
+form {
+    background-color: #B9B4C7;
+    width: 50%;
+    height: 500px;
+    margin : auto;
+    margin-top : 50px;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    padding : 30px;
+    align-items: center;
+    gap : 40px; 
+}
+
+form  textarea, input {
+    width: 85%;
+    border : none;
+    border-radius: 6px;
+    background-color: #fff;
+    height: 40px;
+    font-size: 1rem;
+    padding : 10px;
+}
+
+#txt-area {
+    height: 120px;
+}
+
+.form-btns {
+    display:flex;
+    width: 85%;
+    justify-content: space-between;
+    margin : auto;
+    background-color: transparent;
+}
+
+.form-btns a, button {
+    padding : 0.75rem 2rem;
+    border-radius: 6px;
+    border : none;
+    color : #fff;
+    background-color: #4D2DB7;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.form-btns a:hover , button:hover {
+    background-color: #5C5470;
+}

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Post</title>
+    <link rel="stylesheet" href="/new.css">
+</head>
+<body>
+    <h1>Add New Post</h1>
+    <form action="/social/posts/new" method="post">
+            <input type="text" placeholder="Paste Link of the Image" name="image" required>
+            <textarea name="content" cols="30" rows="10" placeholder="Write Your Content" id="txt-area" required ></textarea>
+            <div class="form-btns">
+                <a href="/social/posts">Back</a>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News App</title>
+    <link rel="stylesheet" href="news-style.css">
+    <link rel="icon" href="/assets/marcos-logo-1.png">
+    <link rel="stylesheet" href="news-media-query.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav>
+        <div class="main-nav container flex">
+            <a href="#" class="company-logo" onclick="reload()">
+                <img src="/assets/marcos-logo-1.png" alt="company logo" >
+            </a>
+            <div class="nav-links" id="nav-links">
+                <ul class="hover-links flex">
+                    <li class="hover-link nav-item" id="sports" onclick="onNavItemClick('sports')">Sports</li>
+                    <li class="hover-link nav-item" id="arts&culture" onclick="onNavItemClick('arts&culture')">Arts & Culture</li>
+                    <li class="hover-link nav-item" id="finance" onclick="onNavItemClick('finance')">Finance</li>
+                    <li class="hover-link nav-item" id="politics" onclick="onNavItemClick('politics')">Politics</li>
+                    <li class="hover-link nav-item" id="entertainment" onclick="onNavItemClick('entertainment')">Entertainment</li>
+                    <li class="hover-link nav-item" id="crime" onclick="onNavItemClick('crime')">Crime</li>
+                    <li class="hover-link nav-item" id="technology" onclick="onNavItemClick('technology')">Technology</li>
+                    <li class="hover-link nav-item" id="business" onclick="onNavItemClick('business')">Business</li>
+                </ul>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="search-bar flex">
+                <input type="text" class="news-input" id="search-text" placeholder="e.g. Science">
+                <button class="search-button" id="search-button">Search</button>
+            </div>
+        
+        </div>
+    </nav>
+
+    <main>
+        <div class="card-container flex container" id="card-container">
+            
+        </div>
+    </main>
+    <div style="height: 100vh;">
+
+    </div>
+    <footer class="flex">
+        <div class="company-logo">
+            <img src="/assets/marcos-logo-1.png" onclick="reload()" id="img">
+        </div>
+        <a href="/home" id="home-btn">Back to Home</a>
+        <div class="footer-text">
+            <p>Copyright &copy; 2023 Marcos Private Ltd.</p>
+        </div>
+        <div class="footer-links flex">
+            <a href="#">Legal Stuff</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Security</a>
+        </div>
+    </footer>
+
+
+    <template id="template-news-card">
+        <div class="card">
+            <div class="card-header">
+                <img src="https://via.placeholder.com/400x200"  id="news-img">
+            </div>
+            <div class="card-content">
+                <h3 id="news-title">This is the Title</h3>
+                <h5 class="news-source" id="news-source">End Gadget 26/08/2023</h5>
+                <p class="news-desc" id="news-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, accusantium doloremque deserunt perspiciatis perferendis magnam aliquid voluptatem atque quisquam aut.</p>
+            </div>
+        </div>
+    </template>
+
+    <script src="/jsfiles/news-app.js"></script>
+</body>
+</html>

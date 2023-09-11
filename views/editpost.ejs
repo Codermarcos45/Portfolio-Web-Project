@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Post</title>
+    <link rel="stylesheet" href="/editpost.css">
+</head>
+<body>
+    <h1>Edit Your Post</h1>
+        <form class="main-box" action="/social/posts/<%= post.id %>?_method=PATCH" method="post">
+            <textarea name="content" cols="30" rows="10" placeholder="Write your post"><%= post.content %></textarea>
+            <input type="text" name="image" value="<%= post.image%>" placeholder="Paste image links">
+            <div class="form-btns">
+                <a href="/social/posts">Back</a>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+</body>
+</html>

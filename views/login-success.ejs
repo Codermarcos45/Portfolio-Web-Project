@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding : 0;
+            margin : 0;
+        }
+        body {
+            background-color: #09001d;
+            padding : 40px;
+            display: flex;
+            justify-content: center;
+        }
+        form {
+            margin : auto;
+            color : #fff;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            gap : 30px;
+        }
+        h3 {
+            font-size: 3rem;
+            background-color: green;
+            padding : 10px 40px;
+            border-radius: 30px;
+        }
+        button {
+            cursor: pointer;
+            color : #fff;
+            padding : 10px 20px;
+            background-color: transparent;
+            border : 2px solid #c40094;
+            border-radius: 8px;
+            font-size: 1.2rem;
+            margin : auto;
+            font-weight: 700;
+        }
+        button:hover {
+            background-color: #c40094;
+        }
+    </style>
+</head>
+<body>
+    <form action="/social/posts">
+        <h3>Login Successful...</h3>
+        <button type="submit">Continue</button>
+    </form>
+</body>
+</html>

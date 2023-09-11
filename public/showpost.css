@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Pangolin&display=swap');
+
+* {
+    padding : 0;
+    margin : 0;
+    box-sizing: border-box;
+    font-family: 'Lato',sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+body {
+    background-color: #09001d;
+}
+
+h1 {
+    padding : 10px;
+    font-size: 60px;
+    text-align: center;
+    color: #C3E0E5;
+    font-family: 'Pangolin', cursive;
+}
+
+h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    color : #C3E0E5;
+}
+
+.box {
+    margin : auto;
+    margin-top: 15px;
+    max-width: 80%;
+    height: 650px;
+    padding : 10px 40px;
+    background : transparent;
+    border : 3px solid #c40094;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 6px;
+    gap : 16px;
+}
+
+.box .caption {
+    font-size: 1.2rem;
+    color : #c4c373;
+    font-weight: 600;
+}
+
+.box-image {
+    width: 100%;
+    height: 520px;
+}
+
+.box-image img {
+    height: 100%;
+    width: 100%;
+    border-radius: 6px;
+}
+
+.box-btn a {
+    padding : 8px 30px;
+    border : 2px solid #c40094;
+    color : #fff;
+    font-size: 1rem;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+.box-btn a:hover {
+    background-color: #c40094;
+}
+
+
+
+
+
+
+

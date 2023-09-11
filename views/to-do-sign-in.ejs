@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do - Sign in</title>
+    <link rel="stylesheet" href="/to-do-sign-in.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Let's Sign in</h1>
+        </div>
+        <div >
+            <form action="/social/sign-in" method="post" class="main">
+                <div class="email flex-column">
+                    <label for="email">Email</label>
+                    <input type="email" placeholder="Enter your email" name="email" required>
+                </div>
+                <div class="pwd flex-column">
+                    <label for="password">Password</label>
+                    <input type="password" placeholder="Enter your password" name="password" required>
+                </div>
+                <div class="btns flex-column">
+                    <button type="submit">SIGN IN</button>
+                </div>
+            </form>
+        </div>
+        <div class="footer">
+            <p>Don't have an account?<span><a href="/social/sign-up"> Sign Up</a></span></p>
+        </div>
+    </div>
+
+    <a href="/social" id="home-btn">Home</a>
+</body>
+</html>
